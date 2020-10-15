@@ -1,26 +1,23 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, ScrollView} from 'react-native';
 import {ILLogo} from '../../assets';
 import {Button, Gap, Input, Link} from '../../components';
 
 const Login = () => {
   return (
-    <View style={styles.page}>
-      <Gap height={20} />
+    <ScrollView style={styles.page}>
       <ILLogo />
-      <Gap height={50} />
       <Text style={styles.title}>Masuk dan mulai berkonsultasi</Text>
-      <Gap height={50} />
-      <Input label="Email" />
+      <Input label="Email Address" />
       <Gap height={24} />
       <Input label="Password" />
       <Gap height={10} />
-      <Link />
+      <Link title="Forgot My Password" size={12} />
       <Gap height={40} />
       <Button title="Login" onPress={() => alert('hello')} />
       <Gap height={30} />
-      <Link />
-    </View>
+      <Link title="Create New Account" size={16} align="center" />
+    </ScrollView>
   );
 };
 
@@ -28,16 +25,17 @@ export default Login;
 
 const styles = StyleSheet.create({
   page: {
-    margin: 40,
+    padding: 40,
+    backgroundColor: 'white',
+    flex: 1,
   },
   title: {
     fontFamily: 'Nunito-SemiBold',
-    width: 230,
-    fontSize: 26,
+    marginVertical: 40,
+    fontWeight: '600',
+    fontSize: 24,
+    lineHeight: 24,
+    maxWidth: 210,
     color: '#112340',
-  },
-  logo: {
-    width: 100,
-    height: 89,
   },
 });

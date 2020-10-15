@@ -1,12 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
-import Gap from '../Gap';
 
 const Input = ({label}) => {
   return (
     <View>
       <Text style={styles.text}>{label}</Text>
-      <Gap height={6} />
       <TextInput style={styles.input} />
     </View>
   );
@@ -23,7 +21,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: 'Nunito-Regular',
-    fontSize: 20,
+    fontSize: 16,
     color: '#7d8797',
+    marginBottom: 6,
   },
 });
