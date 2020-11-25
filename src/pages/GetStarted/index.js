@@ -15,13 +15,13 @@ const GetStarted = ({navigation}) => {
       <View>
         <Button
           title="Get Started"
-          onPress={() => navigation.navigate('Login')}
+          onPress={() => navigation.navigate('Register')}
         />
         <Gap height={16} />
         <Button
           title="Sign In"
           type="secondary"
-          onPress={() => navigation.navigate('Register')}
+          onPress={() => navigation.navigate('Login')}
         />
       </View>
     </ImageBackground>
