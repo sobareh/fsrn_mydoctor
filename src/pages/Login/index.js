@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, ScrollView} from 'react-native';
 import {ILLogo} from '../../assets';
 import {Button, Gap, Input, Link} from '../../components';
-import {colors} from '../../utils';
+import {colors, fonts} from '../../utils';
 
 const Login = () => {
   return (
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
     marginVertical: 40,
     fontSize: 24,
     lineHeight: 24,
